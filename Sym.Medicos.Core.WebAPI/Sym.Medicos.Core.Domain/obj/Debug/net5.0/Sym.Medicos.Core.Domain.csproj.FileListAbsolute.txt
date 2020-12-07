@@ -1,0 +1,12 @@
+C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Domain\bin\Debug\net5.0\Sym.Medicos.Core.Domain.deps.json
+C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Domain\bin\Debug\net5.0\Sym.Medicos.Core.Domain.dll
+C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Domain\bin\Debug\net5.0\ref\Sym.Medicos.Core.Domain.dll
+C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Domain\bin\Debug\net5.0\Sym.Medicos.Core.Domain.pdb
+C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Domain\obj\Debug\net5.0\Sym.Medicos.Core.Domain.csprojAssemblyReference.cache
+C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Domain\obj\Debug\net5.0\Sym.Medicos.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Domain\obj\Debug\net5.0\Sym.Medicos.Core.Domain.AssemblyInfoInputs.cache
+C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Domain\obj\Debug\net5.0\Sym.Medicos.Core.Domain.AssemblyInfo.cs
+C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Domain\obj\Debug\net5.0\Sym.Medicos.Core.Domain.csproj.CoreCompileInputs.cache
+C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Domain\obj\Debug\net5.0\Sym.Medicos.Core.Domain.dll
+C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Domain\obj\Debug\net5.0\ref\Sym.Medicos.Core.Domain.dll
+C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Domain\obj\Debug\net5.0\Sym.Medicos.Core.Domain.pdb
