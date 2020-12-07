@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sym.Medicos.Core.API</name>
+    </assembly>
+    <members>
+        <member name="M:Sym.Medicos.Core.API.Controllers.ConsultorioController.#ctor(Sym.Medicos.Core.Domain.Contracts.IConsultorioRepository)">
+            <summary>
+            Método Construtor
+            </summary>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Controllers.ConsultorioController.Get">
+            <summary>
+            Método responsável por buscas todos os consultorio
+            </summary>
+            <response code="200">Operação Executada com Sucesso.</response>
+            <response code="403">Não Autorizado</response>
+            <response code="404">Não encontrado.</response>
+            <response code="500">Erro no Servidor.</response>
+            <returns></returns>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Controllers.ConsultorioController.VerificaConsultorio(Sym.Medicos.Core.Domain.Entities.Consultorio)">
+            <summary>
+            Método responsável por verificar se o Consultório está cadastrado. 
+            </summary>
+            <param name="consultorio"></param>
+            <response code="200">Operação Executada com Sucesso.</response>
+            <response code="403">Não Autorizado</response>
+            <response code="404">Não encontrado.</response>
+            <response code="500">Erro no Servidor.</response>
+            <returns></returns>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Controllers.ConsultorioController.Post(Sym.Medicos.Core.Domain.Entities.Consultorio)">
+            <summary>
+            Método responsável por fazer o cadastro de Consultorio
+            </summary>
+            <response code="200">Operação Executada com Sucesso.</response>
+            <response code="403">Não Autorizado</response>
+            <response code="404">Não encontrado.</response>
+            <response code="500">Erro no Servidor.</response>
+            <param name="consultorio"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Controllers.ConsultorioController.Deletar(Sym.Medicos.Core.Domain.Entities.Consultorio)">
+            <summary>
+            Método responsável por deletar consultório cadastrado
+            </summary>
+            <param name="consultorio"></param>
+            <response code="200">Operação Executada com Sucesso.</response>
+            <response code="403">Não Autorizado</response>
+            <response code="404">Não encontrado.</response>
+            <response code="500">Erro no Servidor.</response>
+            <returns></returns>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Controllers.MedicoController.#ctor(Sym.Medicos.Core.Domain.Contracts.IMedicoRepository)">
+            <summary>
+            Método Construtor
+            </summary>
+            <param name="medicoRepository"></param>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Controllers.MedicoController.Get">
+            <summary>
+            Método responsável por buscas todos os Medicos
+            </summary>
+            <response code="200">Operação Executada com Sucesso.</response>
+            <response code="403">Não Autorizado</response>
+            <response code="404">Não encontrado.</response>
+            <response code="500">Erro no Servidor.</response>
+            <returns></returns>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Controllers.MedicoController.VerificaMedico(Sym.Medicos.Core.Domain.Entities.Medico)">
+            <summary>
+            Método responsável por verificar se o Médico está cadastrado. 
+            </summary>
+            <param name="medico"></param>
+            <response code="200">Operação Executada com Sucesso.</response>
+            <response code="403">Não Autorizado</response>
+            <response code="404">Não encontrado.</response>
+            <response code="500">Erro no Servidor.</response>
+            <returns></returns>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Controllers.MedicoController.Post(Sym.Medicos.Core.Domain.Entities.Medico)">
+            <summary>
+            Método responsável por fazer o cadastro de Médico
+            </summary>
+            <param name="medico"></param>
+            <returns></returns>
+            <response code="200">Operação Executada com Sucesso.</response>
+            <response code="403">Não Autorizado</response>
+            <response code="404">Não encontrado.</response>
+            <response code="500">Erro no Servidor.</response>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Controllers.MedicoController.Deletar(Sym.Medicos.Core.Domain.Entities.Medico)">
+            <summary>
+            Método responsável por deletar consultório medico
+            </summary>
+            <param name="medico"></param>
+            <returns></returns>
+            <response code="200">Operação Executada com Sucesso.</response>
+            <response code="403">Não Autorizado</response>
+            <response code="404">Não encontrado.</response>
+            <response code="500">Erro no Servidor.</response>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Controllers.UsuarioController.#ctor(Sym.Medicos.Core.Domain.Contracts.IUsuarioRepository)">
+            <summary>
+            Construtor
+            </summary>
+            <param name="usuarioRepository"></param>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Controllers.UsuarioController.Get">
+            <summary>
+            Método responsável por buscas todos os Usuários
+            </summary>
+            <response code="200">Operação Executada com Sucesso.</response>
+            <response code="403">Não Autorizado</response>
+            <response code="404">Não encontrado.</response>
+            <response code="500">Erro no Servidor.</response>
+            <returns></returns>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Controllers.UsuarioController.VerificaUsuario(Sym.Medicos.Core.Domain.Entities.Usuario)">
+            <summary>
+            Método responsável por verificar se o Usuário está cadastrado. 
+            </summary>
+            <param name="usuario"></param>
+            <response code="200">Operação Executada com Sucesso.</response>
+            <response code="403">Não Autorizado</response>
+            <response code="404">Não encontrado.</response>
+            <response code="500">Erro no Servidor.</response>
+            <returns></returns>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Controllers.UsuarioController.Post(Sym.Medicos.Core.Domain.Entities.Usuario)">
+            <summary>
+            Método responsável por fazer o cadastro de Usuário
+            </summary>
+            <param name="usuario"></param>
+            <response code="200">Operação Executada com Sucesso.</response>
+            <response code="403">Não Autorizado</response>
+            <response code="404">Não encontrado.</response>
+            <response code="500">Erro no Servidor.</response>
+            <returns></returns>
+        </member>
+        <member name="T:Sym.Medicos.Core.API.Program">
+            <summary>
+            Program
+            </summary>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Program.Main(System.String[])">
+            <summary>
+            Construtor
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            Chamada do método que chamara a Classe Startup
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Sym.Medicos.Core.API.Startup">
+            <summary>
+            Startup
+            </summary>
+        </member>
+        <member name="P:Sym.Medicos.Core.API.Startup.Configuration">
+            <summary>
+            Interface para Injeção de Dependência e Pipeline do Asp.net Core
+            Arquivo externo para informações de Banco de Dados Etc.
+            </summary>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Construtor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Método utilizado para Adicionar Serviços ao Container
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configuração do Pile Line do Asp.Net Core
+            </summary>
+            <param name="app">Configuração do Pipe Line</param>
+            <param name="env">Verificação de Ambiente de Desenvolvimento ou Produção</param>
+        </member>
+        <member name="T:Sym.Medicos.Core.API.Utils.StartupSwagger">
+            <summary>
+            Startup do swagger
+            </summary>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Utils.StartupSwagger.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure services swagger
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Utils.StartupSwagger.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Configure do swagger
+            </summary>
+            <param name="app"></param>
+        </member>
+    </members>
+</doc>

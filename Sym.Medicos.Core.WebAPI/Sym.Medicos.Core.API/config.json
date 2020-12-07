@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "MySqlConnection": "Server=localhost;Database=SymDB;uid=root;pwd=sa772003;"
+  }
+}

@@ -10,3 +10,9 @@ C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Reposi
 C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Repository\obj\Debug\net5.0\Sym.Medicos.Core.Repository.dll
 C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Repository\obj\Debug\net5.0\ref\Sym.Medicos.Core.Repository.dll
 C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Repository\obj\Debug\net5.0\Sym.Medicos.Core.Repository.pdb
+C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Repository\bin\Debug\net5.0\Sym.Medicos.Core.Repository.runtimeconfig.json
+C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Repository\bin\Debug\net5.0\Sym.Medicos.Core.Repository.runtimeconfig.dev.json
+C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Repository\obj\Debug\net5.0\Sym.Medicos.Core.Repository.genruntimeconfig.cache
+C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Repository\bin\Debug\net5.0\Sym.Medicos.Core.Domain.dll
+C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Repository\bin\Debug\net5.0\Sym.Medicos.Core.Domain.pdb
+C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Repository\obj\Debug\net5.0\Sym.Medicos.Core.Repository.csproj.CopyComplete
