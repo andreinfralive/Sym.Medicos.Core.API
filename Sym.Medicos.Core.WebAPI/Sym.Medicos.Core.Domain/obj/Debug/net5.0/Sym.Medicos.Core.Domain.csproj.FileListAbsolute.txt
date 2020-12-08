@@ -9,3 +9,4 @@ C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Domain
 C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Domain\obj\Debug\net5.0\Sym.Medicos.Core.Domain.dll
 C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Domain\obj\Debug\net5.0\ref\Sym.Medicos.Core.Domain.dll
 C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Domain\obj\Debug\net5.0\Sym.Medicos.Core.Domain.pdb
+C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.Domain\obj\Debug\net5.0\Sym.Medicos.Core.Domain.csprojAssemblyReference.cache

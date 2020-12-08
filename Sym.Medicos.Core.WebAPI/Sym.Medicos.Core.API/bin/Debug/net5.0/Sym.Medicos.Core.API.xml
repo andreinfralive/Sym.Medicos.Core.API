@@ -163,9 +163,20 @@
             <response code="500">Erro no Servidor.</response>
             <returns></returns>
         </member>
-        <member name="M:Sym.Medicos.Core.API.Controllers.VinculoConsultorioMedicoController.Post(Sym.Medicos.Core.Domain.Entities.VinculoMedicoConsultorio)">
+        <member name="M:Sym.Medicos.Core.API.Controllers.VinculoConsultorioMedicoController.Alterar(Sym.Medicos.Core.Domain.Entities.VinculoMedicoConsultorio)">
             <summary>
-            Método responsável por fazer o cadastro de Vinculo Médico e Consultório
+            Método responsável por fazer a atualização de vínculos de médicos com consultórios
+            </summary>
+            <param name="vinculo"></param>
+            <response code="200">Operação Executada com Sucesso.</response>
+            <response code="403">Não Autorizado</response>
+            <response code="404">Não encontrado.</response>
+            <response code="500">Erro no Servidor.</response>
+            <returns></returns>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Controllers.VinculoConsultorioMedicoController.Deletar(Sym.Medicos.Core.Domain.Entities.VinculoMedicoConsultorio)">
+            <summary>
+            Método responsável por deletar vinculo de médico com consultório
             </summary>
             <param name="vinculo"></param>
             <returns></returns>
@@ -174,9 +185,9 @@
             <response code="404">Não encontrado.</response>
             <response code="500">Erro no Servidor.</response>
         </member>
-        <member name="M:Sym.Medicos.Core.API.Controllers.VinculoConsultorioMedicoController.Deletar(Sym.Medicos.Core.Domain.Entities.VinculoMedicoConsultorio)">
+        <member name="M:Sym.Medicos.Core.API.Controllers.VinculoConsultorioMedicoController.Post(Sym.Medicos.Core.Domain.Entities.VinculoMedicoConsultorio)">
             <summary>
-            Método responsável por deletar vinculo de médico com consultório
+            Método responsável por fazer o cadastro de Vinculo Médico e Consultório
             </summary>
             <param name="vinculo"></param>
             <returns></returns>
