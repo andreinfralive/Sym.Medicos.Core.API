@@ -46,37 +46,6 @@ namespace Sym.Medicos.Core.API.Controllers
         }
 
         /// <summary>
-        /// Método responsável por verificar se o Médico está cadastrado. 
-        /// </summary>
-        /// <param name="medico"></param>
-        /// <response code="200">Operação Executada com Sucesso.</response>
-        /// <response code="403">Não Autorizado</response>
-        /// <response code="404">Não encontrado.</response>
-        /// <response code="500">Erro no Servidor.</response>
-        /// <returns></returns>
-        [HttpPost("VerificaMedico")]
-        [ProducesResponseType(statusCode: 200)]
-        [ProducesResponseType(statusCode: 403)]
-        [ProducesResponseType(statusCode: 404)]
-        [ProducesResponseType(statusCode: 500)]
-        public ActionResult VerificaMedico([FromBody] Medico medico)
-        {
-            try
-            {
-                var medicoRetorno = _medicoRepository.Obter(medico.Crm, medico.NomeMedico);
-
-                if (medicoRetorno != null)
-                    return Ok(medicoRetorno);
-
-                return BadRequest("Médico inválido!");
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.ToString());
-            }
-        }
-
-        /// <summary>
         /// Método responsável por fazer o cadastro de Médico
         /// </summary>
         /// <param name="medico"></param>

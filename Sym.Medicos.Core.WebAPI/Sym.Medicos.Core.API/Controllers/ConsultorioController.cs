@@ -45,37 +45,6 @@ namespace Sym.Medicos.Core.API.Controllers
         }
 
         /// <summary>
-        /// Método responsável por verificar se o Consultório está cadastrado. 
-        /// </summary>
-        /// <param name="consultorio"></param>
-        /// <response code="200">Operação Executada com Sucesso.</response>
-        /// <response code="403">Não Autorizado</response>
-        /// <response code="404">Não encontrado.</response>
-        /// <response code="500">Erro no Servidor.</response>
-        /// <returns></returns>
-        [HttpPost("VerificaConsultorio")]
-        [ProducesResponseType(statusCode: 200)]
-        [ProducesResponseType(statusCode: 403)]
-        [ProducesResponseType(statusCode: 404)]
-        [ProducesResponseType(statusCode: 500)]
-        public ActionResult VerificaConsultorio([FromBody] Consultorio consultorio)
-        {
-            try
-            {
-                var consultorioRetorno = _consultorioRepository.Obter(consultorio.NomeConsultorio, consultorio.EnderecoConsultorio);
-
-                if (consultorioRetorno != null)
-                    return Ok(consultorioRetorno);
-
-                return BadRequest("Consultório ou inválido!");
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.ToString());
-            }
-        }
-
-        /// <summary>
         /// Método responsável por fazer o cadastro de Consultorio
         /// </summary>
         /// <response code="200">Operação Executada com Sucesso.</response>

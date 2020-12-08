@@ -107,5 +107,32 @@ namespace Sym.Medicos.Core.API.Controllers
                 return BadRequest(ex.ToString());
             }
         }
+
+        /// <summary>
+        /// Método responsável por deletar o usuário
+        /// </summary>
+        /// <param name="usuario"></param>
+        /// <returns></returns>
+        /// <response code="200">Operação Executada com Sucesso.</response>
+        /// <response code="403">Não Autorizado</response>
+        /// <response code="404">Não encontrado.</response>
+        /// <response code="500">Erro no Servidor.</response>
+        [HttpPost("Deletar")]
+        [ProducesResponseType(statusCode: 200)]
+        [ProducesResponseType(statusCode: 403)]
+        [ProducesResponseType(statusCode: 404)]
+        [ProducesResponseType(statusCode: 500)]
+        public IActionResult Deletar([FromBody] Usuario usuario)
+        {
+            try
+            {
+                _usuarioRepository.Remover(usuario);
+                return Json(_usuarioRepository.ObterTodos());
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.ToString());
+            }
+        }
     }
 }

@@ -6,6 +6,7 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>C:\Projetos\Sym.Medicos.Core.API\Sym.Medicos.Core.WebAPI\Sym.Medicos.Core.API\Sym.Medicos.Core.API.xml</DocumentationFile>
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
 
   <ItemGroup>

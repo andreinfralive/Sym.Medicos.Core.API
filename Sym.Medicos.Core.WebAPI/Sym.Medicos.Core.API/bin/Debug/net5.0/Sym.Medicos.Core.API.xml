@@ -19,17 +19,6 @@
             <response code="500">Erro no Servidor.</response>
             <returns></returns>
         </member>
-        <member name="M:Sym.Medicos.Core.API.Controllers.ConsultorioController.VerificaConsultorio(Sym.Medicos.Core.Domain.Entities.Consultorio)">
-            <summary>
-            Método responsável por verificar se o Consultório está cadastrado. 
-            </summary>
-            <param name="consultorio"></param>
-            <response code="200">Operação Executada com Sucesso.</response>
-            <response code="403">Não Autorizado</response>
-            <response code="404">Não encontrado.</response>
-            <response code="500">Erro no Servidor.</response>
-            <returns></returns>
-        </member>
         <member name="M:Sym.Medicos.Core.API.Controllers.ConsultorioController.Post(Sym.Medicos.Core.Domain.Entities.Consultorio)">
             <summary>
             Método responsável por fazer o cadastro de Consultorio
@@ -62,17 +51,6 @@
             <summary>
             Método responsável por buscas todos os Medicos
             </summary>
-            <response code="200">Operação Executada com Sucesso.</response>
-            <response code="403">Não Autorizado</response>
-            <response code="404">Não encontrado.</response>
-            <response code="500">Erro no Servidor.</response>
-            <returns></returns>
-        </member>
-        <member name="M:Sym.Medicos.Core.API.Controllers.MedicoController.VerificaMedico(Sym.Medicos.Core.Domain.Entities.Medico)">
-            <summary>
-            Método responsável por verificar se o Médico está cadastrado. 
-            </summary>
-            <param name="medico"></param>
             <response code="200">Operação Executada com Sucesso.</response>
             <response code="403">Não Autorizado</response>
             <response code="404">Não encontrado.</response>
@@ -138,6 +116,17 @@
             <response code="404">Não encontrado.</response>
             <response code="500">Erro no Servidor.</response>
             <returns></returns>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Controllers.UsuarioController.Deletar(Sym.Medicos.Core.Domain.Entities.Usuario)">
+            <summary>
+            Método responsável por deletar o usuário
+            </summary>
+            <param name="usuario"></param>
+            <returns></returns>
+            <response code="200">Operação Executada com Sucesso.</response>
+            <response code="403">Não Autorizado</response>
+            <response code="404">Não encontrado.</response>
+            <response code="500">Erro no Servidor.</response>
         </member>
         <member name="T:Sym.Medicos.Core.API.Program">
             <summary>
