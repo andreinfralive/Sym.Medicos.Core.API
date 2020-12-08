@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 
 namespace Sym.Medicos.Core.Domain.Entities
 {
@@ -8,18 +9,36 @@ namespace Sym.Medicos.Core.Domain.Entities
 
         public int IdMedico { get; set; }
 
-        public virtual Medico Medico { get; set; }
+        [Column(TypeName = "varchar(10)")]
+        public string CRM { get; set; }
+
+        [Column(TypeName = "varchar(100)")]
+        public string NomeMedico { get; set; }
 
         public int IdConsultorio { get; set; }
 
-        public virtual Consultorio Consultorio { get; set; }
+        [Column(TypeName = "varchar(100)")]
+        public string NomeConsultorio { get; set; }
 
         /// <summary>
         /// Validações
         /// </summary>
         public override void Validate()
         {
-            throw new NotImplementedException();
+            if (IdConsultorio == 0)
+                AdicionarCritica("Id do Consultório é obrigatório.");
+
+            if (!NomeConsultorio.Any())
+                AdicionarCritica("Nome do Consultório é obrigatório.");
+
+            if (IdMedico == 0)
+                AdicionarCritica("Id do Médico é obrigatório.");
+
+            if (!CRM.Any())
+                AdicionarCritica("CRM é obrigatório.");
+
+            if (!NomeMedico.Any())
+                AdicionarCritica("Nome do médico é obriga´tório.");
         }
     }
 }

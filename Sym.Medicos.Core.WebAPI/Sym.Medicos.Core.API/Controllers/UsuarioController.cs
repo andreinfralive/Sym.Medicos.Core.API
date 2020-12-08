@@ -5,6 +5,9 @@ using System;
 
 namespace Sym.Medicos.Core.API.Controllers
 {
+    /// <summary>
+    /// Usuário
+    /// </summary>
     [Route("api/[Controller]")]
     public class UsuarioController : Controller
     {

@@ -4,6 +4,11 @@
         <name>Sym.Medicos.Core.API</name>
     </assembly>
     <members>
+        <member name="T:Sym.Medicos.Core.API.Controllers.ConsultorioController">
+            <summary>
+            Consultório
+            </summary>
+        </member>
         <member name="M:Sym.Medicos.Core.API.Controllers.ConsultorioController.#ctor(Sym.Medicos.Core.Domain.Contracts.IConsultorioRepository)">
             <summary>
             Método Construtor
@@ -40,6 +45,11 @@
             <response code="404">Não encontrado.</response>
             <response code="500">Erro no Servidor.</response>
             <returns></returns>
+        </member>
+        <member name="T:Sym.Medicos.Core.API.Controllers.MedicoController">
+            <summary>
+            Médico
+            </summary>
         </member>
         <member name="M:Sym.Medicos.Core.API.Controllers.MedicoController.#ctor(Sym.Medicos.Core.Domain.Contracts.IMedicoRepository)">
             <summary>
@@ -78,6 +88,11 @@
             <response code="403">Não Autorizado</response>
             <response code="404">Não encontrado.</response>
             <response code="500">Erro no Servidor.</response>
+        </member>
+        <member name="T:Sym.Medicos.Core.API.Controllers.UsuarioController">
+            <summary>
+            Usuário
+            </summary>
         </member>
         <member name="M:Sym.Medicos.Core.API.Controllers.UsuarioController.#ctor(Sym.Medicos.Core.Domain.Contracts.IUsuarioRepository)">
             <summary>
@@ -122,6 +137,48 @@
             Método responsável por deletar o usuário
             </summary>
             <param name="usuario"></param>
+            <returns></returns>
+            <response code="200">Operação Executada com Sucesso.</response>
+            <response code="403">Não Autorizado</response>
+            <response code="404">Não encontrado.</response>
+            <response code="500">Erro no Servidor.</response>
+        </member>
+        <member name="T:Sym.Medicos.Core.API.Controllers.VinculoConsultorioMedicoController">
+            <summary>
+            Vinculo de Consultório e Medico
+            </summary>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Controllers.VinculoConsultorioMedicoController.#ctor(Sym.Medicos.Core.Domain.Contracts.IVinculoMedicoConsultorioRepository)">
+            <summary>
+            Método Construtor
+            </summary>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Controllers.VinculoConsultorioMedicoController.Get">
+            <summary>
+            Método responsável por buscas todos os vinculos de Médicos com Consultórios
+            </summary>
+            <response code="200">Operação Executada com Sucesso.</response>
+            <response code="403">Não Autorizado</response>
+            <response code="404">Não encontrado.</response>
+            <response code="500">Erro no Servidor.</response>
+            <returns></returns>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Controllers.VinculoConsultorioMedicoController.Post(Sym.Medicos.Core.Domain.Entities.VinculoMedicoConsultorio)">
+            <summary>
+            Método responsável por fazer o cadastro de Vinculo Médico e Consultório
+            </summary>
+            <param name="vinculo"></param>
+            <returns></returns>
+            <response code="200">Operação Executada com Sucesso.</response>
+            <response code="403">Não Autorizado</response>
+            <response code="404">Não encontrado.</response>
+            <response code="500">Erro no Servidor.</response>
+        </member>
+        <member name="M:Sym.Medicos.Core.API.Controllers.VinculoConsultorioMedicoController.Deletar(Sym.Medicos.Core.Domain.Entities.VinculoMedicoConsultorio)">
+            <summary>
+            Método responsável por deletar vinculo de médico com consultório
+            </summary>
+            <param name="vinculo"></param>
             <returns></returns>
             <response code="200">Operação Executada com Sucesso.</response>
             <response code="403">Não Autorizado</response>

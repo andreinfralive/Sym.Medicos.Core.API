@@ -19,11 +19,21 @@ namespace Sym.Medicos.Core.Repository.Repositories
         /// <summary>
         /// Método responsável por trazer uma vinculacao do médico
         /// </summary>
-        /// <param name="IdMedico">Id do Médico</param>
+        /// <param name="CRM">Id do Médico</param>
         /// <returns></returns>
-        public VinculoMedicoConsultorio ObterTodos(int IdMedico)
+        public VinculoMedicoConsultorio ObterTodos(string CRM)
         {
-            return SymContext.vinculoMedicoConsultorios.FirstOrDefault(v => v.IdVinculoMedicoConsultorio == IdMedico);
+            return SymContext.vinculoMedicoConsultorios.FirstOrDefault(v => v.CRM == CRM);
+        }
+
+        /// <summary>
+        /// Contar quantidade de vinculos de do médico com consultório
+        /// </summary>
+        /// <param name="CRM"></param>
+        /// <returns></returns>
+        public int ObterTodosVinculos(string CRM)
+        {
+            return SymContext.vinculoMedicoConsultorios.Count(v => v.CRM == CRM);
         }
     }
 }

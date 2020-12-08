@@ -2,28 +2,30 @@
 using Sym.Medicos.Core.Domain.Contracts;
 using Sym.Medicos.Core.Domain.Entities;
 using System;
+using System.Linq;
 
 namespace Sym.Medicos.Core.API.Controllers
 {
     /// <summary>
-    /// Consultório
+    /// Vinculo de Consultório e Medico
     /// </summary>
     [Route("api/[Controller]")]
-    public class ConsultorioController : Controller
+    
+    public class VinculoConsultorioMedicoController : Controller
     {
-        // Instanciando a interface de Consultorios
-        private readonly IConsultorioRepository _consultorioRepository;
+        //Instanciando a interface de VinculoConsultorioMedico
+        private readonly IVinculoMedicoConsultorioRepository _vinculoMedicoConsultorioRepository;
 
         /// <summary>
         /// Método Construtor
         /// </summary>
-        public ConsultorioController(IConsultorioRepository consultorioRepository)
+        public VinculoConsultorioMedicoController(IVinculoMedicoConsultorioRepository vinculoMedicoConsultorioRepository)
         {
-            _consultorioRepository = consultorioRepository;
+            _vinculoMedicoConsultorioRepository = vinculoMedicoConsultorioRepository;
         }
 
         /// <summary>
-        /// Método responsável por buscas todos os consultorio
+        /// Método responsável por buscas todos os vinculos de Médicos com Consultórios
         /// </summary>
         /// <response code="200">Operação Executada com Sucesso.</response>
         /// <response code="403">Não Autorizado</response>
@@ -39,7 +41,7 @@ namespace Sym.Medicos.Core.API.Controllers
         {
             try
             {
-                return Json(_consultorioRepository.ObterTodos());
+                return Json(_vinculoMedicoConsultorioRepository.ObterTodos());
             }
             catch (Exception ex)
             {
@@ -48,38 +50,42 @@ namespace Sym.Medicos.Core.API.Controllers
         }
 
         /// <summary>
-        /// Método responsável por fazer o cadastro de Consultorio
+        /// Método responsável por fazer o cadastro de Vinculo Médico e Consultório
         /// </summary>
+        /// <param name="vinculo"></param>
+        /// <returns></returns>
         /// <response code="200">Operação Executada com Sucesso.</response>
         /// <response code="403">Não Autorizado</response>
         /// <response code="404">Não encontrado.</response>
         /// <response code="500">Erro no Servidor.</response>
-        /// <param name="consultorio"></param>
-        /// <returns></returns>
         [HttpPost]
         [ProducesResponseType(statusCode: 200)]
         [ProducesResponseType(statusCode: 403)]
         [ProducesResponseType(statusCode: 404)]
         [ProducesResponseType(statusCode: 500)]
-        public IActionResult Post([FromBody] Consultorio consultorio)
+        public IActionResult Post([FromBody] VinculoMedicoConsultorio vinculo)
         {
             try
             {
-                consultorio.Validate();
-                if (!consultorio.EhValido)
-                    return BadRequest(consultorio.ObterMensagensValidacao());
+                vinculo.Validate();
+                if (!vinculo.EhValido)
+                    return BadRequest(vinculo.ObterMensagensValidacao());
 
-                var consultorioCadastrado = _consultorioRepository.ObterTodos(consultorio.NomeConsultorio);
+                int vinculoMedico = _vinculoMedicoConsultorioRepository.ObterTodosVinculos(vinculo.CRM);
 
-                if (consultorioCadastrado != null)
-                    return BadRequest("Consultório já cadastrado no sistema.");
-
-                if (consultorio.IdConsultorio > 0)
-                    _consultorioRepository.Atualizar(consultorio);
+                if (vinculoMedico == 2)
+                    return BadRequest("Médico já possui dois vinculos com Consultórios.");
                 else
-                    _consultorioRepository.Adicionar(consultorio);
+                {
+                    var vinculoRetorno = _vinculoMedicoConsultorioRepository.ObterTodos(vinculo.CRM);
 
-                return Created("api/consultorio", consultorio);
+                    if (vinculoRetorno == null)
+                        return BadRequest("Nenhum Médico Vinculado a nenhum Consultório.");
+
+                    _vinculoMedicoConsultorioRepository.Adicionar(vinculo);
+                }
+
+                return Created("api/VinculoConsultorioMedico", vinculo);
             }
             catch (Exception ex)
             {
@@ -88,25 +94,25 @@ namespace Sym.Medicos.Core.API.Controllers
         }
 
         /// <summary>
-        /// Método responsável por deletar consultório cadastrado
+        /// Método responsável por deletar vinculo de médico com consultório
         /// </summary>
-        /// <param name="consultorio"></param>
+        /// <param name="vinculo"></param>
+        /// <returns></returns>
         /// <response code="200">Operação Executada com Sucesso.</response>
         /// <response code="403">Não Autorizado</response>
         /// <response code="404">Não encontrado.</response>
         /// <response code="500">Erro no Servidor.</response>
-        /// <returns></returns>
+        [HttpPost("Deletar")]
         [ProducesResponseType(statusCode: 200)]
         [ProducesResponseType(statusCode: 403)]
         [ProducesResponseType(statusCode: 404)]
         [ProducesResponseType(statusCode: 500)]
-        [HttpPost("Deletar")]
-        public IActionResult Deletar([FromBody] Consultorio consultorio)
+        public IActionResult Deletar([FromBody] VinculoMedicoConsultorio vinculo)
         {
             try
             {
-                _consultorioRepository.Remover(consultorio);
-                return Json(_consultorioRepository.ObterTodos());
+                _vinculoMedicoConsultorioRepository.Remover(vinculo);
+                return Json(_vinculoMedicoConsultorioRepository.ObterTodos());
             }
             catch (Exception ex)
             {
