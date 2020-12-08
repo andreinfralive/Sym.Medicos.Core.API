@@ -23,8 +23,8 @@ namespace Sym.Medicos.Core.API.Utils
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "Sym Medicos",
-                    Description = "Sistema de Medicos Divinópolis",
+                    Title = "Sym Médicos Web",
+                    Description = "Sistema de Médicos Divinópolis",
                     TermsOfService = new Uri("https://www.Sym.com.br"),
                     Contact = new OpenApiContact
                     {
