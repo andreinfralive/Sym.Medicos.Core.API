@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\Sym.Medicos.Core.API\\Sym.Medicos.Core.WebAPI\\Sym.Medicos.Core.Domain\\Sym.Medicos.Core.Domain.csproj",
+      "projectUniqueName": "D:\\Andre\\GrupoSym\\Projeto_Atual\\Projetos\\Sym.Medicos.Core.API\\Sym.Medicos.Core.WebAPI\\Sym.Medicos.Core.Domain\\Sym.Medicos.Core.Domain.csproj",
       "projectName": "Sym.Medicos.Core.Domain",
-      "projectPath": "C:\\Projetos\\Sym.Medicos.Core.API\\Sym.Medicos.Core.WebAPI\\Sym.Medicos.Core.Domain\\Sym.Medicos.Core.Domain.csproj",
+      "projectPath": "D:\\Andre\\GrupoSym\\Projeto_Atual\\Projetos\\Sym.Medicos.Core.API\\Sym.Medicos.Core.WebAPI\\Sym.Medicos.Core.Domain\\Sym.Medicos.Core.Domain.csproj",
       "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\Sym.Medicos.Core.API\\Sym.Medicos.Core.WebAPI\\Sym.Medicos.Core.Domain\\obj\\",
+      "outputPath": "D:\\Andre\\GrupoSym\\Projeto_Atual\\Projetos\\Sym.Medicos.Core.API\\Sym.Medicos.Core.WebAPI\\Sym.Medicos.Core.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",

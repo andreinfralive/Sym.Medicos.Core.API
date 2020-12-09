@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qVYYTeLdrf+j1mh6Pk5lV6koi02i8QE8plVNjZ2VvGbOptOYkieDbJKv+xWd5URBWd3VJlVgMisHwnokPJetKw==",
+  "dgSpecHash": "B4/cWwK0CDxEsnvbsJTHQR7rZ0q9vlLvfL75NC8CdBdwF/mCfQHPL1UptBF7o/rrALD5w6sj5TE1wF/1HJJsoQ==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\Sym.Medicos.Core.API\\Sym.Medicos.Core.WebAPI\\Sym.Medicos.Core.Repository\\Sym.Medicos.Core.Repository.csproj",
+  "projectFilePath": "D:\\Andre\\GrupoSym\\Projeto_Atual\\Projetos\\Sym.Medicos.Core.API\\Sym.Medicos.Core.WebAPI\\Sym.Medicos.Core.Repository\\Sym.Medicos.Core.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andre\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

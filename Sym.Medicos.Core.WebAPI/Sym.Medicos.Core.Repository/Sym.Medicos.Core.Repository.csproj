@@ -26,4 +26,10 @@
     <ProjectReference Include="..\Sym.Medicos.Core.Domain\Sym.Medicos.Core.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="symdb.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

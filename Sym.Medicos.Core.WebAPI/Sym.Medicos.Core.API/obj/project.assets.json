@@ -6109,11 +6109,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\Sym.Medicos.Core.API\\Sym.Medicos.Core.WebAPI\\Sym.Medicos.Core.API\\Sym.Medicos.Core.API.csproj",
+      "projectUniqueName": "D:\\Andre\\GrupoSym\\Projeto_Atual\\Projetos\\Sym.Medicos.Core.API\\Sym.Medicos.Core.WebAPI\\Sym.Medicos.Core.API\\Sym.Medicos.Core.API.csproj",
       "projectName": "Sym.Medicos.Core.API",
-      "projectPath": "C:\\Projetos\\Sym.Medicos.Core.API\\Sym.Medicos.Core.WebAPI\\Sym.Medicos.Core.API\\Sym.Medicos.Core.API.csproj",
+      "projectPath": "D:\\Andre\\GrupoSym\\Projeto_Atual\\Projetos\\Sym.Medicos.Core.API\\Sym.Medicos.Core.WebAPI\\Sym.Medicos.Core.API\\Sym.Medicos.Core.API.csproj",
       "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\Sym.Medicos.Core.API\\Sym.Medicos.Core.WebAPI\\Sym.Medicos.Core.API\\obj\\",
+      "outputPath": "D:\\Andre\\GrupoSym\\Projeto_Atual\\Projetos\\Sym.Medicos.Core.API\\Sym.Medicos.Core.WebAPI\\Sym.Medicos.Core.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6130,8 +6130,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Projetos\\Sym.Medicos.Core.API\\Sym.Medicos.Core.WebAPI\\Sym.Medicos.Core.Repository\\Sym.Medicos.Core.Repository.csproj": {
-              "projectPath": "C:\\Projetos\\Sym.Medicos.Core.API\\Sym.Medicos.Core.WebAPI\\Sym.Medicos.Core.Repository\\Sym.Medicos.Core.Repository.csproj"
+            "D:\\Andre\\GrupoSym\\Projeto_Atual\\Projetos\\Sym.Medicos.Core.API\\Sym.Medicos.Core.WebAPI\\Sym.Medicos.Core.Repository\\Sym.Medicos.Core.Repository.csproj": {
+              "projectPath": "D:\\Andre\\GrupoSym\\Projeto_Atual\\Projetos\\Sym.Medicos.Core.API\\Sym.Medicos.Core.WebAPI\\Sym.Medicos.Core.Repository\\Sym.Medicos.Core.Repository.csproj"
             }
           }
         }
